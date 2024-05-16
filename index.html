@@ -11,6 +11,12 @@
         <h1>Random Email Generator</h1>
         <p>Generated Email: <span id="randomEmail"></span></p>
         <button onclick="generateEmail()">Generate Email</button>
+        
+        <!-- Form for receiving emails -->
+        <form id="emailForm" action="mailto:your@email.com" method="post" enctype="text/plain">
+            <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address" required>
+            <button type="submit">Receive Email</button>
+        </form>
     </div>
 
     <script src="script.js"></script>
